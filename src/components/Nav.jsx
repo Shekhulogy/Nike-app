@@ -2,7 +2,7 @@ import { headerLogo } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
 
-const Nav = () => {
+const Nav = ({ openHamMenu }) => {
   return (
     <header className="padding-x py-8 absolute z-10 w-full">
       <nav
@@ -31,7 +31,7 @@ const Nav = () => {
           ))}
         </ul>
 
-        <div className="hidden max-lg:block">
+        <div className="hidden max-lg:block" onClick={openHamMenu}>
           <img src={hamburger} alt="Hamburger" width={25} height={25} />
         </div>
       </nav>

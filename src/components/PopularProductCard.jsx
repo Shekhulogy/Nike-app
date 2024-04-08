@@ -2,7 +2,10 @@ import { star } from "../assets/icons";
 
 const PopularProductCard = ({ product }) => {
   return (
-    <div>
+    <div
+      className="place-content-center p-4 rounded-2xl transition ease-in-out 
+      delay-25 hover:-translate-y-1 hover:scale-110 hover:shadow-2xl duration-300"
+    >
       <img
         src={product.imgURL}
         alt={product.name}
